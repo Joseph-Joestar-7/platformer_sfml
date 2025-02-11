@@ -6,10 +6,7 @@ int main()
 {
 	sf::RenderWindow window(sf::VideoMode(1200, 900),"Mario I guess");
 	sf::Clock deltaClock;
-	Camera camera;
 	Renderer renderer(window);
-
-	
 
 	Begin(window);
 	while (window.isOpen())
