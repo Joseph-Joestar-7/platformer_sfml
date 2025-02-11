@@ -12,8 +12,7 @@ void Map::CreateCheckerboard(size_t width, size_t height)
 	{
 		for (auto& cell : column)
 		{
-			cell = ~last;
-			last = cell;
+			last = cell = ~last;
 		}
 	}
 }
