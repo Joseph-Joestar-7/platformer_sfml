@@ -5,14 +5,13 @@ Map::Map(float cellSize): cellSize(cellSize),grid()
 
 void Map::CreateCheckerboard(size_t width, size_t height)
 {
-	grid = std::vector(width, std::vector(height,0));
+	grid = std::vector(width, std::vector(height, 0));
 
-	int last =0 ;
-	for (auto& column : grid)
+	for (size_t x = 0; x < width; ++x)
 	{
-		for (auto& cell : column)
+		for (size_t y = 0; y < height; ++y)
 		{
-			last = cell = ~last;
+			grid[x][y] = (x + y) % 2;  
 		}
 	}
 }

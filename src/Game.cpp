@@ -15,7 +15,7 @@ void Begin(const sf::RenderWindow& window)
 		}
 	}
 
-	map.CreateCheckerboard(11, 11);
+	map.CreateCheckerboard(10, 10);
 	camera.position = sf::Vector2f(160.0f, 160.0f);
 }
 
