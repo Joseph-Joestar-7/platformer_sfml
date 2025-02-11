@@ -1,9 +1,11 @@
 #include "Game.h"
+#include "Camera.h"
 
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(1200, 900),"Mario I guess");
 	sf::Clock deltaClock;
+	Camera camera;
 
 	Begin(window);
 	while (window.isOpen())
@@ -16,6 +18,8 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();	
 		}
+		window.setView(camera.GetView(window.getSize())); 
+
 		Update(deltaTime);
 
 		window.clear();
