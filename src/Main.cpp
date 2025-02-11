@@ -1,11 +1,29 @@
 #include "Game.h"
-#include <SFML/Graphics.hpp>
-#include <cstdlib>
 
 int main()
 {
-	srand((unsigned)time(NULL));
-	Game g("config/config.txt");
-	g.run();
-	return 0;
+	sf::RenderWindow window(sf::VideoMode(1200, 900),"Mario I guess");
+	sf::Clock deltaClock;
+
+	Begin(window);
+	while (window.isOpen())
+	{
+		float deltaTime = deltaClock.restart().asSeconds();
+
+		sf::Event event{};
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();	
+		}
+		Update(deltaTime);
+
+		window.clear();
+
+		Render(window);
+
+		window.display();
+	}
 }
+
+
