@@ -1,8 +1,9 @@
 #include "Game.h"
-#include "Resources.h"
-
+#include "Map.h"
 #include <filesystem>
 
+Map map;
+Camera camera(320.0f);
 
 void Begin(const sf::RenderWindow& window)
 {
@@ -13,6 +14,9 @@ void Begin(const sf::RenderWindow& window)
 			Resources::textures[file.path().filename().string()].loadFromFile(file.path().string());
 		}
 	}
+
+	map.CreateCheckerboard(11, 11);
+	camera.position = sf::Vector2f(160.0f, 160.0f);
 }
 
 void Update(float deltaTime)
@@ -22,5 +26,6 @@ void Update(float deltaTime)
 
 void Render(Renderer& renderer)
 {
-	renderer.Draw(Resources::textures["tilesprite.png"], sf::Vector2f(), sf::Vector2f(2, 2));
+	map.Draw(renderer);
+	//renderer.Draw(Resources::textures["tilesprite.png"], sf::Vector2f(), sf::Vector2f(2, 2));
 }
