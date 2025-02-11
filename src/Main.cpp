@@ -1,11 +1,15 @@
 #include "Game.h"
 #include "Camera.h"
+#include "Renderer.h"
 
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(1200, 900),"Mario I guess");
 	sf::Clock deltaClock;
 	Camera camera;
+	Renderer renderer(window);
+
+	
 
 	Begin(window);
 	while (window.isOpen())
@@ -24,7 +28,7 @@ int main()
 
 		window.clear();
 
-		Render(window);
+		Render(renderer);
 
 		window.display();
 	}

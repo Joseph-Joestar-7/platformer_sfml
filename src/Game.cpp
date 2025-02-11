@@ -1,11 +1,12 @@
 #include "Game.h"
 
-sf::CircleShape circle(2.0f,360u);
+sf::Texture texture;
+
 
 void Begin(const sf::RenderWindow& window)
 {
-	circle.setOrigin(sf::Vector2f(circle.getRadius(), circle.getRadius()));
-	//circle.setPosition((sf::Vector2f)window.getSize() / 2.0f);
+	if (!texture.loadFromFile("res/images/tilesprite.png"))
+		return;
 }
 
 void Update(float deltaTime)
@@ -13,7 +14,7 @@ void Update(float deltaTime)
 
 }
 
-void Render(sf::RenderWindow& window)
+void Render(Renderer& renderer)
 {
-	window.draw(circle);
+	renderer.Draw(texture, sf::Vector2f(), sf::Vector2f(2, 2));
 }
