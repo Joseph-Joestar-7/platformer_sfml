@@ -36,3 +36,19 @@ void Map::Draw(Renderer& renderer)
 		x++;
 	}
 }
+
+void Map::CreateFromImage(const sf::Image& image)
+{
+	grid.clear();
+	grid = std::vector(image.getSize().x, std::vector(image.getSize().y, 0));
+
+	for (size_t x = 0; x < grid.size(); x++)
+	{
+		for (size_t y = 0; y < grid[y].size(); y++)
+		{
+			sf::Color color = image.getPixel(x, y);
+			if (color == sf::Color::Black)
+				grid[x][y] = 1;
+		}
+	}
+}
