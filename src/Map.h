@@ -2,6 +2,7 @@
 #include "Renderer.h"
 #include "Resources.h"
 #include <vector>
+#include <iostream>
 
 class Map
 {

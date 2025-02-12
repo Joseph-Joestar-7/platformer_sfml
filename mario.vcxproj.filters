@@ -1334,9 +1334,4 @@
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\world44.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
 </Project>
