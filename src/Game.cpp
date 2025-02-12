@@ -2,8 +2,11 @@
 #include "Map.h"
 #include <filesystem>
 
-Map map;
+Map map(8.0f);
 Camera camera(320.0f);
+//Camera camera(500.0f);
+
+const float movementSpeed = 180.0f;
 
 void Begin(const sf::RenderWindow& window)
 {
@@ -15,13 +18,24 @@ void Begin(const sf::RenderWindow& window)
 		}
 	}
 
-	map.CreateCheckerboard(10, 10);
+	sf::Image image;
+	image.loadFromFile("res/images/world441.png");
+	map.CreateFromImage(image);
 	camera.position = sf::Vector2f(160.0f, 160.0f);
 }
 
 void Update(float deltaTime)
 {
+	float move = movementSpeed;
 
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+		camera.position.x += move * deltaTime;
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+		camera.position.x -= move * deltaTime;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+		camera.position.y += move * deltaTime;
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+		camera.position.y -= move * deltaTime;
 }
 
 void Render(Renderer& renderer)

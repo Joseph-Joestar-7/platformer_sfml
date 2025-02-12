@@ -51,4 +51,5 @@ void Map::CreateFromImage(const sf::Image& image)
 				grid[x][y] = 1;
 		}
 	}
+
 }
