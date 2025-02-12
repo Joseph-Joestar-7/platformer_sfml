@@ -2,7 +2,7 @@
 #include "Map.h"
 #include <filesystem>
 
-Map map(12.0f);
+Map map(8.0f);
 Camera camera(320.0f);
 //Camera camera(500.0f);
 

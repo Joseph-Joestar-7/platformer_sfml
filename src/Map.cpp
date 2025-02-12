@@ -24,7 +24,7 @@ void Map::Draw(Renderer& renderer)
 		int y = 0;
 		for (const auto& cell : column)
 		{
-			if (cell)
+			if (!cell)
 			{
 				renderer.Draw(Resources::textures["tilesprite.png"],
 					sf::Vector2f(cellSize* x + cellSize/2.0f,
