@@ -1,12 +1,11 @@
 #include "Game.h"
 #include "Map.h"
 #include <filesystem>
+#include "Mario.h"
 
-Map map(2.0f);
+Map map(12.0f);
 Camera camera(320.0f);
-//Camera camera(500.0f);
-
-const float movementSpeed = 180.0f;
+Mario mario;
 
 void Begin(const sf::RenderWindow& window)
 {
@@ -18,28 +17,23 @@ void Begin(const sf::RenderWindow& window)
 		}
 	}
 
-	sf::Image image;
-	image.loadFromFile("res/images/world441.png");
-	map.CreateFromImage(image);
-	camera.position = sf::Vector2f(160.0f, 160.0f);
+	//sf::Image image;
+	//image.loadFromFile("res/images/world441.png");
+	//mario.position = map.CreateFromImage(image);
+
+	mario.position= map.CreateFromFile("res/map/map.txt");
+
 }
 
 void Update(float deltaTime)
 {
-	float move = movementSpeed;
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-		camera.position.x += move * deltaTime;
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-		camera.position.x -= move * deltaTime;
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-		camera.position.y += move * deltaTime;
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-		camera.position.y -= move * deltaTime;
+	mario.Update(deltaTime);
+	camera.position = mario.position;	
 }
 
 void Render(Renderer& renderer)
 {
 	map.Draw(renderer);
+	mario.Render(renderer);
 	//renderer.Draw(Resources::textures["tilesprite.png"], sf::Vector2f(), sf::Vector2f(2, 2));
 }

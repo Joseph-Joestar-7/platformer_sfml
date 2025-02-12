@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Mario.cpp" />
     <ClCompile Include="src\Map.cpp" />
     <ClCompile Include="src\Resources.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
@@ -149,6 +150,7 @@
     <ClCompile Include="src\vendor\glm\detail\glm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Mario.h" />
     <ClInclude Include="src\Map.h" />
     <ClInclude Include="src\Resources.h" />
     <ClInclude Include="src\Renderer.h" />
@@ -582,6 +584,9 @@
     <None Include="src\vendor\glm\gtx\vector_angle.inl" />
     <None Include="src\vendor\glm\gtx\vector_query.inl" />
     <None Include="src\vendor\glm\gtx\wrap.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\map\map.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
