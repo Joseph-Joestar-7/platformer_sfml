@@ -1,6 +1,6 @@
 #include "Physics.h"
 
-b2World Physics::world{};
+b2World Physics::world{b2Vec2(0.0f,-9.2f)};
 
 void Physics::Init()
 {
