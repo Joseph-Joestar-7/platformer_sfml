@@ -1,5 +1,5 @@
 #pragma once
-#include <Box2D/include/src/world.h>
+#include <Box2D/box2d.h>
 
 class Physics
 {
@@ -7,7 +7,8 @@ public:
 	static void Init();
 	static void Update(float deltaTime);
 private:
-	static b2World world;
+	
+
 
 };
 
