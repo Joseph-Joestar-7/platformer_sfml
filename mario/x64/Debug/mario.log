@@ -1,15 +1,5 @@
 ﻿  Physics.cpp
-  Mario.cpp
-C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\vendor\box2d\src\core.h(6,10): error C1083: Cannot open include file: 'box2d/math_functions.h': No such file or directory
-  (compiling source file 'src/Physics.cpp')
+C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Physics.cpp(3,30): error C2440: 'initializing': cannot convert from 'b2Vec2' to 'char *'
+      C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Physics.cpp(3,30):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
   
-  Map.cpp
-C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Map.cpp(51,40): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Map.cpp(51,37): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-  Resources.cpp
-  Renderer.cpp
-  Camera.cpp
-  Game.cpp
-  Main.cpp
-  glm.cpp
-  Generating Code...
