@@ -5,6 +5,7 @@
 class Mario
 {
 public:
+	void Begin();
 	void Update(float deltaTime);
 	void Render(Renderer& renderer);
 	sf::Vector2f position{};

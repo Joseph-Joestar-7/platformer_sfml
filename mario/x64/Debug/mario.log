@@ -3,3 +3,9 @@ C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Physics.cpp(3,31): error C
       C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Physics.cpp(3,31):
       No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
   
+C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Physics.cpp(12,8): error C2039: 'Step': is not a member of 'b2World'
+      C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\include\Box2D\include\src\world.h(44,16):
+      see declaration of 'b2World'
+  
+  Main.cpp
+  Generating Code...

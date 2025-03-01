@@ -2,6 +2,7 @@
 #include "Map.h"
 #include <filesystem>
 #include "Mario.h"
+#include "Physics.h"
 
 Map map(12.0f);
 Camera camera(320.0f);
@@ -21,12 +22,15 @@ void Begin(const sf::RenderWindow& window)
 	//image.loadFromFile("res/images/world441.png");
 	//mario.position = map.CreateFromImage(image);
 
+	Physics::Init();
 	mario.position= map.CreateFromFile("res/map/map.txt");
+	mario.Begin();
 
 }
 
 void Update(float deltaTime)
 {
+	Physics::Update(deltaTime);
 	mario.Update(deltaTime);
 	camera.position = mario.position;	
 }

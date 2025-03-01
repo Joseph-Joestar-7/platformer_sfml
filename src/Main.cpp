@@ -8,6 +8,8 @@ int main()
 	sf::Clock deltaClock;
 	Renderer renderer(window);
 
+	window.setFramerateLimit(60);
+
 	Begin(window);
 	while (window.isOpen())
 	{
