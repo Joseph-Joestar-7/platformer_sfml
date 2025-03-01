@@ -8,7 +8,8 @@ public:
 	static void Init();
 	static void Update(float deltaTime);
 private:
-	static b2World world;
+	static b2WorldDef worldDef;
+	static b2WorldId worldId;
 
 
 };
