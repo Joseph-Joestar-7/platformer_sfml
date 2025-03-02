@@ -7,7 +7,7 @@ class Physics
 public:
 	static void Init();
 	static void Update(float deltaTime);
-private:
+
 	static b2WorldDef worldDef;
 	static b2WorldId worldId;
 

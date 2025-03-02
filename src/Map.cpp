@@ -116,6 +116,17 @@ sf::Vector2f Map::CreateFromFile(const std::string& filePath)
             {
                 // Place a tile.
                 grid[x][y] = 1;
+
+                b2BodyDef bodyDef{};
+                bodyDef.position = {cellSize*x + cellSize/2.0f, cellSize* y + cellSize/2.0f};
+                //b2Body* body = Physics::world.CreateBody(&bodyDef);
+                b2BodyId bodyId = b2CreateBody(Physics::worldId, &bodyDef);
+                b2Polygon shape{};
+                shape = b2MakeBox(cellSize/2.0f, cellSize/2.0f);
+                b2ShapeDef shapeDef= b2DefaultShapeDef();
+
+                b2CreatePolygonShape(bodyId, &shapeDef, &shape);
+                
             }
             else if (ch == '2')
             {
