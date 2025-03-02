@@ -21,3 +21,8 @@ void Physics::Update(float deltaTime)
 {
     b2World_Step(worldId, deltaTime,1 );
 }
+
+void Physics::DebugDraw(Renderer& renderer)
+{
+
+}
