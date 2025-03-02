@@ -20,5 +20,5 @@ void Physics::Init()
 
 void Physics::Update(float deltaTime)
 {
-    b2World_Step(worldId, deltaTime, );
+    b2World_Step(worldId, deltaTime,1 );
 }
