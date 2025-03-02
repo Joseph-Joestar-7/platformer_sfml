@@ -5,7 +5,7 @@
 static b2WorldDef CreateWorldDef()
 {
     b2WorldDef def = b2DefaultWorldDef();
-    def.gravity = {0.0f, -10.0f};  // Set gravity
+    def.gravity = {0.0f, 9.2f};  // Set gravity
     return def;
 }
 

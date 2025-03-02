@@ -39,5 +39,5 @@ void Mario::Update(float deltaTime)
 void Mario::Render(Renderer& renderer)
 {
 	renderer.Draw(Resources::textures["megamanstanding.png"],position,
-		sf::Vector2f(1.0f,1.5f));
+		sf::Vector2f(1.0f,1.5f),angle); 
 }
