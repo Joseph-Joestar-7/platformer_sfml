@@ -4,8 +4,8 @@
 #include "Mario.h"
 #include "Physics.h"
 
-Map map(12.0f);
-Camera camera(320.0f);
+Map map(1.0f);
+Camera camera(20.0f);
 Mario mario;
 
 void Begin(const sf::RenderWindow& window)

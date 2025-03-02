@@ -14,7 +14,7 @@ b2WorldId Physics::worldId = b2CreateWorld(&Physics::worldDef);
 
 void Physics::Init()
 {
-	
+    CreateWorldDef();
 }
 
 void Physics::Update(float deltaTime)
