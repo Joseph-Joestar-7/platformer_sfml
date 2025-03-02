@@ -39,5 +39,6 @@ void Render(Renderer& renderer)
 {
 	map.Draw(renderer);
 	mario.Render(renderer);
+
 	//renderer.Draw(Resources::textures["tilesprite.png"], sf::Vector2f(), sf::Vector2f(2, 2));
 }

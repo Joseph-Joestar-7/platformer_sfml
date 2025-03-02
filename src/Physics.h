@@ -3,7 +3,7 @@
 #include <Box2D/include/src/world.h>
 #include "Box2D/include/src/body.h"
 #include "box2d/include/src/shape.h"
-#include "box2d/include/samples/draw.h"
+//#include "box2d/include/samples/draw.h"
 #include "Renderer.h"
 
 class MyDebugDraw;
