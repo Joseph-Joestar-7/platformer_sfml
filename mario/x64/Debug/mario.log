@@ -1,4 +1,36 @@
-﻿Physics.obj : error LNK2019: unresolved external symbol b2DefaultWorldDef referenced in function "struct b2WorldDef __cdecl CreateWorldDef(void)" (?CreateWorldDef@@YA?AUb2WorldDef@@XZ)
-Physics.obj : error LNK2019: unresolved external symbol b2CreateWorld referenced in function "void __cdecl `dynamic initializer for 'private: static struct b2WorldId Physics::worldId''(void)" (??__E?worldId@Physics@@0Ub2WorldId@@A@@YAXXZ)
-Physics.obj : error LNK2019: unresolved external symbol b2World_Step referenced in function "public: static void __cdecl Physics::Update(float)" (?Update@Physics@@SAXM@Z)
-C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\x64\Debug\mario.exe : fatal error LNK1120: 3 unresolved externals
+﻿box2dd.lib(types.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(types.obj)' or at ''; linking object as if no debug info
+box2dd.lib(world.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(world.obj)' or at ''; linking object as if no debug info
+box2dd.lib(core.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(core.obj)' or at ''; linking object as if no debug info
+box2dd.lib(timer.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(timer.obj)' or at ''; linking object as if no debug info
+box2dd.lib(math_functions.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(math_functions.obj)' or at ''; linking object as if no debug info
+box2dd.lib(aabb.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(aabb.obj)' or at ''; linking object as if no debug info
+box2dd.lib(body.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(body.obj)' or at ''; linking object as if no debug info
+box2dd.lib(shape.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(shape.obj)' or at ''; linking object as if no debug info
+box2dd.lib(contact.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(contact.obj)' or at ''; linking object as if no debug info
+box2dd.lib(island.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(island.obj)' or at ''; linking object as if no debug info
+box2dd.lib(joint.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(joint.obj)' or at ''; linking object as if no debug info
+box2dd.lib(sensor.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(sensor.obj)' or at ''; linking object as if no debug info
+box2dd.lib(solver_set.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(solver_set.obj)' or at ''; linking object as if no debug info
+box2dd.lib(bitset.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(bitset.obj)' or at ''; linking object as if no debug info
+box2dd.lib(table.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(table.obj)' or at ''; linking object as if no debug info
+box2dd.lib(geometry.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(geometry.obj)' or at ''; linking object as if no debug info
+box2dd.lib(distance.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(distance.obj)' or at ''; linking object as if no debug info
+box2dd.lib(dynamic_tree.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(dynamic_tree.obj)' or at ''; linking object as if no debug info
+box2dd.lib(broad_phase.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(broad_phase.obj)' or at ''; linking object as if no debug info
+box2dd.lib(constraint_graph.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(constraint_graph.obj)' or at ''; linking object as if no debug info
+box2dd.lib(id_pool.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(id_pool.obj)' or at ''; linking object as if no debug info
+box2dd.lib(arena_allocator.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(arena_allocator.obj)' or at ''; linking object as if no debug info
+box2dd.lib(solver.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(solver.obj)' or at ''; linking object as if no debug info
+box2dd.lib(manifold.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(manifold.obj)' or at ''; linking object as if no debug info
+box2dd.lib(array.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(array.obj)' or at ''; linking object as if no debug info
+box2dd.lib(distance_joint.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(distance_joint.obj)' or at ''; linking object as if no debug info
+box2dd.lib(motor_joint.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(motor_joint.obj)' or at ''; linking object as if no debug info
+box2dd.lib(mouse_joint.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(mouse_joint.obj)' or at ''; linking object as if no debug info
+box2dd.lib(prismatic_joint.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(prismatic_joint.obj)' or at ''; linking object as if no debug info
+box2dd.lib(revolute_joint.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(revolute_joint.obj)' or at ''; linking object as if no debug info
+box2dd.lib(weld_joint.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(weld_joint.obj)' or at ''; linking object as if no debug info
+box2dd.lib(wheel_joint.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(wheel_joint.obj)' or at ''; linking object as if no debug info
+box2dd.lib(hull.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(hull.obj)' or at ''; linking object as if no debug info
+box2dd.lib(contact_solver.obj) : warning LNK4099: PDB '' was not found with 'box2dd.lib(contact_solver.obj)' or at ''; linking object as if no debug info
+LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+  mario.vcxproj -> C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\x64\Debug\mario.exe
