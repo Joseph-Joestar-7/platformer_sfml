@@ -1,8 +1,6 @@
 #pragma once
 #include "Renderer.h"
 #include "Resources.h"
-#include "Box2D/include/src/body.h"
-#include "box2d/include/src/shape.h"
 #include "Physics.h"
 #include <vector>
 #include <fstream>

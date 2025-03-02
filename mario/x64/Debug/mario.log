@@ -1,4 +1,2 @@
-﻿  Map.cpp
-C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Map.cpp(51,40): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Map.cpp(51,37): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+﻿  Mario.cpp
   mario.vcxproj -> C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\x64\Debug\mario.exe
