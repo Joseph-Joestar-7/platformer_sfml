@@ -1,6 +1,6 @@
 #include "Mario.h"
 #include <iostream>
-const float movementSpeed = 20.0f;
+const float movementSpeed = 7.0f;
 
 void Mario::Begin()
 {
@@ -21,25 +21,27 @@ void Mario::Begin()
 void Mario::Update(float deltaTime)
 {
 	float move = movementSpeed;
-	b2Body_SetAwake(bodyId, true);
+
+	b2Vec2 velocity = b2Body_GetLinearVelocity(bodyId);
+	velocity.x = 0.0f;
+
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
-		b2Body_ApplyForceToCenter(bodyId, b2Vec2(move, 0.0f), true);
+		velocity.x += move;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 	{
-		b2Body_ApplyForceToCenter(bodyId, b2Vec2(-move, 0.0f), true);
+		velocity.x -= move;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 	{
-		b2Body_ApplyForceToCenter(bodyId, b2Vec2(0.0f,-move), true);
+		b2Body_ApplyForceToCenter(bodyId, b2Vec2(0.0f, -move* 10.0f), true);
 	}
-
+	
+	b2Body_SetLinearVelocity(bodyId, velocity);
 
 	position = sf::Vector2f(b2Body_GetPosition(bodyId).x, b2Body_GetPosition(bodyId).y);
 	angle = b2Rot_GetAngle(b2Body_GetRotation(bodyId)) * (180.0f/M_PI);
-
-	
 
 }
 
