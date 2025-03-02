@@ -12,7 +12,6 @@ static b2WorldDef CreateWorldDef()
 b2WorldDef Physics::worldDef = CreateWorldDef();
 b2WorldId Physics::worldId = b2CreateWorld(&Physics::worldDef);
 
-b2WorldId Physics::worldId = b2CreateWorld(&Physics::worldDef);
 void Physics::Init()
 {
 	

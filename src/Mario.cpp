@@ -2,6 +2,10 @@
 
 const float movementSpeed = 180.0f;
 
+void Mario::Begin()
+{
+}
+
 void Mario::Update(float deltaTime)
 {
 	float move = movementSpeed;

@@ -1,11 +1,4 @@
-﻿  Physics.cpp
-C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Physics.cpp(3,31): error C2440: 'initializing': cannot convert from 'b2Vec2' to 'char *'
-      C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Physics.cpp(3,31):
-      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-  
-C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\src\Physics.cpp(12,8): error C2039: 'Step': is not a member of 'b2World'
-      C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\include\Box2D\include\src\world.h(44,16):
-      see declaration of 'b2World'
-  
-  Main.cpp
-  Generating Code...
+﻿Physics.obj : error LNK2019: unresolved external symbol b2DefaultWorldDef referenced in function "struct b2WorldDef __cdecl CreateWorldDef(void)" (?CreateWorldDef@@YA?AUb2WorldDef@@XZ)
+Physics.obj : error LNK2019: unresolved external symbol b2CreateWorld referenced in function "void __cdecl `dynamic initializer for 'private: static struct b2WorldId Physics::worldId''(void)" (??__E?worldId@Physics@@0Ub2WorldId@@A@@YAXXZ)
+Physics.obj : error LNK2019: unresolved external symbol b2World_Step referenced in function "public: static void __cdecl Physics::Update(float)" (?Update@Physics@@SAXM@Z)
+C:\Users\RITABAN\Desktop\CS Playground\SFML\mario\x64\Debug\mario.exe : fatal error LNK1120: 3 unresolved externals
